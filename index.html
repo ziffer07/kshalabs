@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ksha - Verified carbon credits supply from India</title>
+<title>Ksha - Verified carbon credits supply</title>
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
 
@@ -22,12 +25,21 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
 
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     background: var(--paper);
     color: var(--ink);
     font-family: var(--mono);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+  }
+
+  img, svg, table, pre, code {
+    max-width: 100%;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -303,9 +315,20 @@
   }
 
   @media (max-width: 720px) {
+    .wrap.wrap { padding-left: 20px; padding-right: 20px; }
     .ledger-row { grid-template-columns: 1fr; gap: 6px; }
     .stamp-grid { grid-template-columns: 1fr; gap: 20px; }
     .timeline-row { grid-template-columns: 1fr; gap: 8px; }
+    .hero { padding: 64px 0 48px; }
+    .hero-headline { min-height: 0; word-break: break-word; }
+    .section-pad { padding: 56px 0; }
+    .cta-section { padding: 64px 0 72px; }
+    .hero-actions { gap: 12px; }
+  }
+
+  @media (max-width: 480px) {
+    .wrap.wrap { padding-left: 18px; padding-right: 18px; }
+    .hero-headline { font-size: 28px; }
   }
 
   :focus-visible {
@@ -318,18 +341,18 @@
 
 <nav>
   <div class="wrap nav-row">
-    <div class="logo">ksha<span class="blink"></span></div>
+    <div class="logo">Ksha<span class="blink"></span></div>
     <a href="#contact" class="nav-cta">Get in touch</a>
   </div>
 </nav>
 
 <header class="hero wrap">
   <div class="eyebrow">Global C-Sink &middot; India</div>
-  <h1 class="hero-headline" id="typed-headline" aria-label="Verified credits. Funded before the wait breaks supply.">
+  <h1 class="hero-headline" id="typed-headline" aria-label="Verified Credits. Funded before the wait breaks supply.">
     <span class="l1" id="type-l1"></span><br>
     <span class="l2" id="type-l2"></span><span class="cursor" id="type-cursor">&nbsp;</span>
   </h1>
-  <p class="hero-sub">Ksha works with Global C-Sink producers across India to close the 6-18 month gap between verification and payment, so the volume you're sourcing doesn't stall waiting on someone else's cash flow.</p>
+  <p class="hero-sub">Ksha works with C-Sink producers across India to close the 6-18 month gap between verification and payment - so the volume you're sourcing doesn't stall waiting on someone else's cash flow.</p>
   <div class="hero-actions">
     <a href="#contact" class="btn-primary">Get in touch →</a>
     <a href="#flow" class="btn-ghost">See how it works</a>
@@ -339,7 +362,7 @@
 <section class="section-pad wrap" id="gap">
   <div class="section-head">
     <div class="eyebrow">The actual problem</div>
-    <h2 class="section-title">Verification isn't the bottleneck. Getting paid after it, is.</h2>
+    <h2 class="section-title">Verification isn't the bottleneck. Getting paid after it is.</h2>
   </div>
   <div class="timeline-row">
     <div class="timeline-label">Today</div>
@@ -360,12 +383,12 @@
     <div class="ledger-row">
       <div class="ledger-mark">01</div>
       <div class="ledger-who">Source</div>
-      <div class="ledger-what">Ksha identifies and vets Global C-Sink producers across India. <strong>We do the legwork on supply.</strong></div>
+      <div class="ledger-what">Ksha identifies and vets C-Sink producers. <strong>We do the legwork on supply.</strong></div>
     </div>
     <div class="ledger-row">
       <div class="ledger-mark">02</div>
       <div class="ledger-who">Verify</div>
-      <div class="ledger-what">Production is verified exactly as it happens today. <strong>Nothing changes in that process.</strong></div>
+      <div class="ledger-what">Production is verified exactly as it happens today. <strong>Nothing changes in their process.</strong></div>
     </div>
     <div class="ledger-row">
       <div class="ledger-mark">03</div>
@@ -388,29 +411,29 @@
   <div class="stamp-grid">
     <div class="stamp-card">
       <div class="stamp-tag">In progress</div>
-      <div class="stamp-label">Accreditation in process, directly with global platforms.</div>
+      <div class="stamp-label">C-Sink trading accreditation, in process with global platforms.</div>
     </div>
     <div class="stamp-card">
-      <div class="stamp-fig">6-18mo</div>
+      <div class="stamp-fig">6–18mo</div>
       <div class="stamp-label">The typical wait between verification and payment today - the gap we're built to close.</div>
     </div>
     <div class="stamp-card">
       <div class="stamp-fig">0</div>
-      <div class="stamp-label">Extra paperwork for producers. Verification is the only data we use.</div>
+      <div class="stamp-label">Extra paperwork for producers. We only use verified data.</div>
     </div>
   </div>
 </section>
 
 <section class="cta-section wrap" id="contact">
-  <h2 class="cta-title">Sourcing Artisan-tier biochar volume from India?</h2>
-  <p class="cta-sub">Tell us what you need - volume, pricing, documentation - and we'll tell you straight how we can deliver it.</p>
-  <a href="mailto:ksharyan18@gmail.com" class="btn-primary">Get in touch →</a>
+  <h2 class="cta-title">Sourcing carbon credits volume from India?</h2>
+  <p class="cta-sub">Tell us what you need - volume, pricing, documentation - and we'll tell you how to get started.</p>
+  <a href="mailto:aryan@kshalabs.com" class="btn-primary">Get in touch →</a>
 </section>
 
 <footer class="wrap">
   <div class="footer-row">
     <span>ksha</span>
-    <span>Built on Global C-Sink verified data. Not a registry.</span>
+    <span>Built on C-Sink verified data. Not a registry replacement.</span>
   </div>
 </footer>
 
@@ -420,7 +443,7 @@
   var l1 = document.getElementById('type-l1');
   var l2 = document.getElementById('type-l2');
   var cursor = document.getElementById('type-cursor');
-  var line1 = 'Verified biochar.';
+  var line1 = 'Verified Credits.';
   var line2 = "Funded before the wait breaks supply.";
 
   if (reduceMotion) {
